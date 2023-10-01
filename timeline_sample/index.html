@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timeline</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Timeline</h1>
+    </header>
+
+    <div class="container">
+      <form class="search">
+        <div class="search-box">
+          <label for="start-date"> Start Date: </label>
+          <input
+            required="required"
+            id="start-date"
+            class="input start-date"
+            type="date"
+          />
+          <label for="end-date"> End Date: </label>
+          <input
+            required="required"
+            id="end-date"
+            class="input end-date"
+            type="date"
+          />
+          <button type="submit" class="btn btn-search">Search</button>
+        </div>
+      </form>
+
+      <main class="timeline-container">
+        <div class="timeline timeline-right">
+          <div class="divider"></div>
+          <div class="content">
+            <div class="date">2022-10-02</div>
+            <div class="text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+              atque.
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline timeline-left">
+          <div class="content">
+            <div class="date">2022-11-03</div>
+            <div class="text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+              atque.
+            </div>
+          </div>
+          <div class="divider"></div>
+        </div>
+      </main>
+
+      <form class="add-timeline">
+        <textarea
+          class="timeline-text"
+          required
+          cols="30"
+          rows="10"
+          placeholder="Your Text ..."
+        ></textarea>
+        <input required class="input input-add-date" type="date" />
+        <button class="btn btn-add-timeline" type="submit">Add Item</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
